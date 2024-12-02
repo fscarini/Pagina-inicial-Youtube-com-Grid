@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset básico de margens, preenchimentos e bordas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Remove bordas e estilização de formulários nos inputs */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Herda a fonte do elemento pai */
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+  appearance: none; /* Remove estilos padrões em alguns navegadores */
+}
+
+/* Remove a estilização padrão de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove sublinhado e cor padrão dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset de estilo de botões */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Garante que os campos de formulário não sejam redimensionados */
+textarea {
+  resize: vertical; /* Permite apenas redimensionamento vertical */
+}
+
+/* Remove itálico de elementos como <em> e <i> */
+em,
+i {
+  font-style: normal;
+}
+
+/* Tratamento padrão para imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+/* Reseta o estilo de figuras */
+figure {
+  margin: 0;
+}
+
+/* Normalize o comportamento de blocos */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figure,
+figcaption {
+  display: block;
+}
+
+/* Remover aspas em citações */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
+
+/* Define altura mínima para as páginas */
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Para garantir consistência em dispositivos móveis */
+}
+
+/* Aplicar propriedades globais ao body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif; /* Defina a fonte padrão */
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+  word-wrap: break-word;
+}
+
+/* Ajustes em tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove a decoração em links focados para acessibilidade */
+a:focus {
+  outline: none;
+}
+
+/* Suporte básico a imagens responsivas */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Evita colapsos visuais */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+/* Garantir uma barra de rolagem suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tira o comportamento padrão do Firefox para botão de busca */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Remove estilo de números em inputs do tipo number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Para o Firefox */
+}
+
+/* Ajustes finos para navegadores antigos */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
